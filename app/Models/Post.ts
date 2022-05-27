@@ -34,10 +34,10 @@ export default class Post extends BaseModel {
   })
   public users: BelongsTo<typeof User>
 
-  @belongsTo(() => Place, {
-    localKey: 'idLugar'
-  })
-  public places: BelongsTo<typeof Place>
+  // @belongsTo(() => Place, {
+  //   localKey: 'idLugar'
+  // })
+  // public places: BelongsTo<typeof Place>
 
   @hasMany(() => Comment, {
     foreignKey: 'idPost'

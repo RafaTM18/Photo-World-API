@@ -49,7 +49,9 @@ export default class UsersController {
         const validationSchema = schema.create({
             nome: schema.string({trim: true}, [
                 rules.required(),
-                rules.alpha(),
+                rules.alpha({
+                    allow: ['space']
+                }),
                 rules.minLength(3),
                 rules.maxLength(50),
             ]),
@@ -103,7 +105,9 @@ export default class UsersController {
         const validationSchema = schema.create({
             nome: schema.string({trim: true}, [
                 rules.required(),
-                rules.alpha(),
+                rules.alpha({
+                    allow: ['space']
+                }),
                 rules.minLength(3),
                 rules.maxLength(50),
             ]),

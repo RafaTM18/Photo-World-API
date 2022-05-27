@@ -7,7 +7,7 @@ export default class Posts extends BaseSchema {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
       table.integer('id_autor').notNullable().references('id').inTable('users')
-      table.integer('id_lugar').notNullable().references('id').inTable('places')
+      // table.integer('id_lugar').notNullable().references('id').inTable('places')
       table.string('desc').notNullable()
       table.string('img').notNullable()
       table.integer('likes').notNullable()

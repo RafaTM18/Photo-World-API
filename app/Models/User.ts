@@ -1,7 +1,8 @@
 import { DateTime } from 'luxon'
-import { BaseModel, column, hasMany, HasMany } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, beforeSave, column, hasMany, HasMany } from '@ioc:Adonis/Lucid/Orm'
 import Comment from './Comment'
 import Post from './Post'
+import Hash from "@ioc:Adonis/Core/Hash";
 
 export default class User extends BaseModel {
   @column({ isPrimary: true })
@@ -37,5 +38,12 @@ export default class User extends BaseModel {
     foreignKey: 'idAutor'
   })
   public comments: HasMany<typeof Comment>
+
+  @beforeSave()
+	public static async hashPassword(user: User) {
+		if (user.$dirty.password) {
+			user.password = await Hash.make(user.password);
+		}
+	}
 
 }

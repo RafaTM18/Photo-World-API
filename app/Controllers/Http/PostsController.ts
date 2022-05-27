@@ -48,10 +48,10 @@ export default class PostsController {
                 rules.required(),
                 rules.exists({ table: 'users', column: 'id' }),
             ]),
-            id_place: schema.number([
-                rules.required(),
-                rules.exists({ table: 'places', column: 'id' }),
-            ]),
+            // id_place: schema.number([
+            //     rules.required(),
+            //     rules.exists({ table: 'places', column: 'id' }),
+            // ]),
             desc: schema.string({trim: true}, [
                 rules.required(),
                 rules.minLength(3),

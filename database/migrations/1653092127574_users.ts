@@ -8,6 +8,7 @@ export default class Users extends BaseSchema {
       table.increments('id')
       table.string('nome').notNullable()
       table.string('username').notNullable()
+      table.string('password').notNullable()
       table.string('foto')
       table.timestamp('dt_nasc', { useTz: true }).notNullable()
 
