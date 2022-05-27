@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon'
 import { BaseModel, belongsTo, BelongsTo, column, hasMany, HasMany } from '@ioc:Adonis/Lucid/Orm'
 import Comment from './Comment'
-import Place from './Place'
+// import Place from './Place'
 import User from './User'
 
 export default class Post extends BaseModel {
