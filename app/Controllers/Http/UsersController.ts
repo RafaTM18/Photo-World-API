@@ -61,6 +61,9 @@ export default class UsersController {
                 rules.minLength(3),
                 rules.maxLength(25),
             ]),
+            password: schema.string({trim: true}, [
+                rules.required(),
+            ]),
             dtNasc: schema.date({
                 format: 'yyyy-MM-dd'
             },
