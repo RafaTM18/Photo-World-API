@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "8f59dd00-08d6-4e8c-9ae5-c51708810e7b",
+		"name": "PHOTO WORLD ROUTES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET USER",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/user",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "Rafael",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "rafatm18",
+							"type": "text"
+						},
+						{
+							"key": "dtNasc",
+							"value": "2001-11-24",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/user",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/user/1",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PLACE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/place",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"place"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PLACE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "Campus CPTL",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "UFMS - Três Lagoas",
+							"type": "text"
+						},
+						{
+							"key": "local",
+							"value": "https://goo.gl/maps/KwWeh2y45jQZ24md9",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"value": "https://cptl.ufms.br/files/2015/09/cptl-porta.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/place",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"place"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PLACE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/place/1",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"place",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET POST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "POST POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "desc",
+							"value": "aaaa",
+							"type": "text"
+						},
+						{
+							"key": "img",
+							"value": "url aq",
+							"type": "text"
+						},
+						{
+							"key": "id_autor",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "id_lugar",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/post",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE POST",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/post/1",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"post",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET COMMUNITY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "POST COMMUNITY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nome",
+							"value": "Comunidade para adoradores de pé",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "pack do pé 😋",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/community",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"community"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE COMMUNITY",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://photo-world-api2.herokuapp.com/api/community/1",
+					"protocol": "https",
+					"host": [
+						"photo-world-api2",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"community",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
