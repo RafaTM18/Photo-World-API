@@ -21,6 +21,9 @@ export default class Post extends BaseModel {
   public img: string | null
 
   @column()
+  public local: string
+
+  @column()
   public likes: number
 
   @column.dateTime({ autoCreate: true })

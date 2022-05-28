@@ -5,6 +5,7 @@ import Community from 'App/Models/Community';
 
 const messages = {
     'required': 'O campo {{ field }} é obrigatório',
+    'alpha': 'O campo {{ field }} precisa conter somente letras',
     'minLength': 'O campo {{ field }} precisa ter no mínimo {{ options.minLength }} caracteres',
     'maxLength': 'O campo {{ field }} precisa ter no máximo {{ options.maxLength }} caracteres',
     'unique': 'O campo {{ field }} precisa ser único, esse {{ field }} já foi utilizado',

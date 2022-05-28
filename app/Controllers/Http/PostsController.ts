@@ -7,6 +7,7 @@ import Post from 'App/Models/Post';
 
 const messages = {
     'required': 'O campo {{ field }} é obrigatório',
+    'url': 'O campo {{ field }} precisar ser uma URL válida',
     'exists': 'O campo {{ field }} precisa existir na tabela {{ options.table }}',
     'unsigned': 'O campo {{ field }} precisa ser positivo',
     'minLength': 'O campo {{ field }} precisa ter no mínimo {{ options.minLength }} caracteres',
@@ -56,6 +57,10 @@ export default class PostsController {
                 rules.required(),
                 rules.minLength(3),
                 rules.maxLength(250),
+            ]),
+            local: schema.string({trim: true}, [
+                rules.required(),
+                rules.url()
             ]),
             likes: schema.number([
                 rules.unsigned(),

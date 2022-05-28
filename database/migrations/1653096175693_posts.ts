@@ -9,6 +9,7 @@ export default class Posts extends BaseSchema {
       table.integer('id_autor').notNullable().references('id').inTable('users')
       // table.integer('id_lugar').notNullable().references('id').inTable('places')
       table.string('desc').notNullable()
+      table.string('local')
       table.string('img')
       table.integer('likes').notNullable()
 
