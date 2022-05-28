@@ -9,7 +9,7 @@ export default class Places extends BaseSchema {
       table.string('nome').notNullable()
       table.string('desc').notNullable()
       table.string('local').notNullable()
-      table.string('img').notNullable()
+      table.string('img')
 
       /**
        * Uses timestamptz for PostgreSQL and DATETIME2 for MSSQL
